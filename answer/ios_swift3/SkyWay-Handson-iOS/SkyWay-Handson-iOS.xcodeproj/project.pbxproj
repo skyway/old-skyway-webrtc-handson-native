@@ -254,7 +254,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "羽田 健太郎";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					6FE248B21F3AB6EC0048087A = {
 						CreatedOnToolsVersion = 8.3.3;
