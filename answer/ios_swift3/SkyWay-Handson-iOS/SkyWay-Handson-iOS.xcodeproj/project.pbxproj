@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E795461D1B94E90CC3F22E /* libPods-SkyWay-Handson-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A54701F04E034125DC05DFD /* libPods-SkyWay-Handson-iOS.a */; };
+		6F4E72481F3AE60800060428 /* PeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E72471F3AE60800060428 /* PeerListViewController.swift */; };
+		6F4E724A1F3AE78400060428 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E72491F3AE78400060428 /* Define.swift */; };
+		6FC012FF1F3ABA8800C19028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC012FE1F3ABA8800C19028 /* ViewController.swift */; };
+		6FC013011F3ABB3200C19028 /* MediaConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC013001F3ABB3200C19028 /* MediaConnectionViewController.swift */; };
+		6FC013031F3ABB3E00C19028 /* DataConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC013021F3ABB3E00C19028 /* DataConnectionViewController.swift */; };
+		6FE248B71F3AB6EC0048087A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE248B61F3AB6EC0048087A /* AppDelegate.swift */; };
+		6FE248BC1F3AB6EC0048087A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE248BA1F3AB6EC0048087A /* Main.storyboard */; };
+		6FE248BE1F3AB6EC0048087A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE248BD1F3AB6EC0048087A /* Assets.xcassets */; };
+		6FE248C11F3AB6EC0048087A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE248BF1F3AB6EC0048087A /* LaunchScreen.storyboard */; };
+		6FE248CC1F3AB6EC0048087A /* SkyWay_Handson_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE248CB1F3AB6EC0048087A /* SkyWay_Handson_iOSTests.swift */; };
+		6FE248D71F3AB6EC0048087A /* SkyWay_Handson_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE248D61F3AB6EC0048087A /* SkyWay_Handson_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FE248C81F3AB6EC0048087A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE248AB1F3AB6EC0048087A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE248B21F3AB6EC0048087A;
+			remoteInfo = "SkyWay-Handson-iOS";
+		};
+		6FE248D31F3AB6EC0048087A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE248AB1F3AB6EC0048087A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE248B21F3AB6EC0048087A;
+			remoteInfo = "SkyWay-Handson-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A54701F04E034125DC05DFD /* libPods-SkyWay-Handson-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyWay-Handson-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3AEFF0BF129939CE50C161 /* Pods-SkyWay-Handson-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyWay-Handson-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4E5678F8822BBD9715E57F7E /* Pods-SkyWay-Handson-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyWay-Handson-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6F4E72471F3AE60800060428 /* PeerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerListViewController.swift; sourceTree = "<group>"; };
+		6F4E72491F3AE78400060428 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		6FC012FE1F3ABA8800C19028 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FC013001F3ABB3200C19028 /* MediaConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaConnectionViewController.swift; sourceTree = "<group>"; };
+		6FC013021F3ABB3E00C19028 /* DataConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnectionViewController.swift; sourceTree = "<group>"; };
+		6FC013041F3ADC1400C19028 /* SkyWay-Handson-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyWay-Handson-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		6FE248B31F3AB6EC0048087A /* SkyWay-Handson-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyWay-Handson-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE248B61F3AB6EC0048087A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FE248BB1F3AB6EC0048087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FE248BD1F3AB6EC0048087A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		6FE248C01F3AB6EC0048087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FE248C21F3AB6EC0048087A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		6FE248C71F3AB6EC0048087A /* SkyWay-Handson-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkyWay-Handson-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE248CB1F3AB6EC0048087A /* SkyWay_Handson_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWay_Handson_iOSTests.swift; sourceTree = "<group>"; };
+		6FE248CD1F3AB6EC0048087A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE248D21F3AB6EC0048087A /* SkyWay-Handson-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkyWay-Handson-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE248D61F3AB6EC0048087A /* SkyWay_Handson_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWay_Handson_iOSUITests.swift; sourceTree = "<group>"; };
+		6FE248D81F3AB6EC0048087A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FE248B01F3AB6EC0048087A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E795461D1B94E90CC3F22E /* libPods-SkyWay-Handson-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248C41F3AB6EC0048087A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248CF1F3AB6EC0048087A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FC012FB1F3ABA8800C19028 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248BD1F3AB6EC0048087A /* Assets.xcassets */,
+				6FE248BF1F3AB6EC0048087A /* LaunchScreen.storyboard */,
+				6FE248C21F3AB6EC0048087A /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6FC012FC1F3ABA8800C19028 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248BA1F3AB6EC0048087A /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6FC012FD1F3ABA8800C19028 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6FC012FE1F3ABA8800C19028 /* ViewController.swift */,
+				6FC013001F3ABB3200C19028 /* MediaConnectionViewController.swift */,
+				6FC013021F3ABB3E00C19028 /* DataConnectionViewController.swift */,
+				6F4E72471F3AE60800060428 /* PeerListViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		6FE248AA1F3AB6EC0048087A = {
+			isa = PBXGroup;
+			children = (
+				6FE248B51F3AB6EC0048087A /* SkyWay-Handson-iOS */,
+				6FE248CA1F3AB6EC0048087A /* SkyWay-Handson-iOSTests */,
+				6FE248D51F3AB6EC0048087A /* SkyWay-Handson-iOSUITests */,
+				6FE248B41F3AB6EC0048087A /* Products */,
+				9D42C663C45987F45AAE03DD /* Pods */,
+				93F0B579E104FA8515CAE4E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FE248B41F3AB6EC0048087A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248B31F3AB6EC0048087A /* SkyWay-Handson-iOS.app */,
+				6FE248C71F3AB6EC0048087A /* SkyWay-Handson-iOSTests.xctest */,
+				6FE248D21F3AB6EC0048087A /* SkyWay-Handson-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FE248B51F3AB6EC0048087A /* SkyWay-Handson-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248B61F3AB6EC0048087A /* AppDelegate.swift */,
+				6F4E72491F3AE78400060428 /* Define.swift */,
+				6FC013041F3ADC1400C19028 /* SkyWay-Handson-iOS-Bridging-Header.h */,
+				6FC012FB1F3ABA8800C19028 /* resources */,
+				6FC012FC1F3ABA8800C19028 /* view */,
+				6FC012FD1F3ABA8800C19028 /* viewcontroller */,
+			);
+			path = "SkyWay-Handson-iOS";
+			sourceTree = "<group>";
+		};
+		6FE248CA1F3AB6EC0048087A /* SkyWay-Handson-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248CB1F3AB6EC0048087A /* SkyWay_Handson_iOSTests.swift */,
+				6FE248CD1F3AB6EC0048087A /* Info.plist */,
+			);
+			path = "SkyWay-Handson-iOSTests";
+			sourceTree = "<group>";
+		};
+		6FE248D51F3AB6EC0048087A /* SkyWay-Handson-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FE248D61F3AB6EC0048087A /* SkyWay_Handson_iOSUITests.swift */,
+				6FE248D81F3AB6EC0048087A /* Info.plist */,
+			);
+			path = "SkyWay-Handson-iOSUITests";
+			sourceTree = "<group>";
+		};
+		93F0B579E104FA8515CAE4E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A54701F04E034125DC05DFD /* libPods-SkyWay-Handson-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D42C663C45987F45AAE03DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AEFF0BF129939CE50C161 /* Pods-SkyWay-Handson-iOS.debug.xcconfig */,
+				4E5678F8822BBD9715E57F7E /* Pods-SkyWay-Handson-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FE248B21F3AB6EC0048087A /* SkyWay-Handson-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE248DB1F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOS" */;
+			buildPhases = (
+				F9D46ABFF8A40267DDFA3AE2 /* 📦 Check Pods Manifest.lock */,
+				6FE248AF1F3AB6EC0048087A /* Sources */,
+				6FE248B01F3AB6EC0048087A /* Frameworks */,
+				6FE248B11F3AB6EC0048087A /* Resources */,
+				254C840CEB13307859F95B22 /* 📦 Embed Pods Frameworks */,
+				97DBDC46B924CBB0B03AC580 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SkyWay-Handson-iOS";
+			productName = "SkyWay-Handson-iOS";
+			productReference = 6FE248B31F3AB6EC0048087A /* SkyWay-Handson-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FE248C61F3AB6EC0048087A /* SkyWay-Handson-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE248DE1F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOSTests" */;
+			buildPhases = (
+				6FE248C31F3AB6EC0048087A /* Sources */,
+				6FE248C41F3AB6EC0048087A /* Frameworks */,
+				6FE248C51F3AB6EC0048087A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FE248C91F3AB6EC0048087A /* PBXTargetDependency */,
+			);
+			name = "SkyWay-Handson-iOSTests";
+			productName = "SkyWay-Handson-iOSTests";
+			productReference = 6FE248C71F3AB6EC0048087A /* SkyWay-Handson-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FE248D11F3AB6EC0048087A /* SkyWay-Handson-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE248E11F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOSUITests" */;
+			buildPhases = (
+				6FE248CE1F3AB6EC0048087A /* Sources */,
+				6FE248CF1F3AB6EC0048087A /* Frameworks */,
+				6FE248D01F3AB6EC0048087A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FE248D41F3AB6EC0048087A /* PBXTargetDependency */,
+			);
+			name = "SkyWay-Handson-iOSUITests";
+			productName = "SkyWay-Handson-iOSUITests";
+			productReference = 6FE248D21F3AB6EC0048087A /* SkyWay-Handson-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FE248AB1F3AB6EC0048087A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					6FE248B21F3AB6EC0048087A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 23WT7ZRGJZ;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					6FE248C61F3AB6EC0048087A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6FE248B21F3AB6EC0048087A;
+					};
+					6FE248D11F3AB6EC0048087A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6FE248B21F3AB6EC0048087A;
+					};
+				};
+			};
+			buildConfigurationList = 6FE248AE1F3AB6EC0048087A /* Build configuration list for PBXProject "SkyWay-Handson-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FE248AA1F3AB6EC0048087A;
+			productRefGroup = 6FE248B41F3AB6EC0048087A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FE248B21F3AB6EC0048087A /* SkyWay-Handson-iOS */,
+				6FE248C61F3AB6EC0048087A /* SkyWay-Handson-iOSTests */,
+				6FE248D11F3AB6EC0048087A /* SkyWay-Handson-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FE248B11F3AB6EC0048087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE248C11F3AB6EC0048087A /* LaunchScreen.storyboard in Resources */,
+				6FE248BE1F3AB6EC0048087A /* Assets.xcassets in Resources */,
+				6FE248BC1F3AB6EC0048087A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248C51F3AB6EC0048087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248D01F3AB6EC0048087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		254C840CEB13307859F95B22 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DBDC46B924CBB0B03AC580 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D46ABFF8A40267DDFA3AE2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FE248AF1F3AB6EC0048087A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC012FF1F3ABA8800C19028 /* ViewController.swift in Sources */,
+				6F4E72481F3AE60800060428 /* PeerListViewController.swift in Sources */,
+				6FE248B71F3AB6EC0048087A /* AppDelegate.swift in Sources */,
+				6FC013031F3ABB3E00C19028 /* DataConnectionViewController.swift in Sources */,
+				6F4E724A1F3AE78400060428 /* Define.swift in Sources */,
+				6FC013011F3ABB3200C19028 /* MediaConnectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248C31F3AB6EC0048087A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE248CC1F3AB6EC0048087A /* SkyWay_Handson_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE248CE1F3AB6EC0048087A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE248D71F3AB6EC0048087A /* SkyWay_Handson_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FE248C91F3AB6EC0048087A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FE248B21F3AB6EC0048087A /* SkyWay-Handson-iOS */;
+			targetProxy = 6FE248C81F3AB6EC0048087A /* PBXContainerItemProxy */;
+		};
+		6FE248D41F3AB6EC0048087A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FE248B21F3AB6EC0048087A /* SkyWay-Handson-iOS */;
+			targetProxy = 6FE248D31F3AB6EC0048087A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FE248BA1F3AB6EC0048087A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE248BB1F3AB6EC0048087A /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6FE248BF1F3AB6EC0048087A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE248C01F3AB6EC0048087A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FE248D91F3AB6EC0048087A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FE248DA1F3AB6EC0048087A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FE248DC1F3AB6EC0048087A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3AEFF0BF129939CE50C161 /* Pods-SkyWay-Handson-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 23WT7ZRGJZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SkyWay-Handson-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyWay-Handson-iOS/SkyWay-Handson-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6FE248DD1F3AB6EC0048087A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5678F8822BBD9715E57F7E /* Pods-SkyWay-Handson-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 23WT7ZRGJZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SkyWay-Handson-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyWay-Handson-iOS/SkyWay-Handson-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6FE248DF1F3AB6EC0048087A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SkyWay-Handson-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyWay-Handson-iOS.app/SkyWay-Handson-iOS";
+			};
+			name = Debug;
+		};
+		6FE248E01F3AB6EC0048087A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SkyWay-Handson-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyWay-Handson-iOS.app/SkyWay-Handson-iOS";
+			};
+			name = Release;
+		};
+		6FE248E21F3AB6EC0048087A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "SkyWay-Handson-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SkyWay-Handson-iOS";
+			};
+			name = Debug;
+		};
+		6FE248E31F3AB6EC0048087A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "SkyWay-Handson-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.SkyWay-Handson-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SkyWay-Handson-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FE248AE1F3AB6EC0048087A /* Build configuration list for PBXProject "SkyWay-Handson-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE248D91F3AB6EC0048087A /* Debug */,
+				6FE248DA1F3AB6EC0048087A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE248DB1F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE248DC1F3AB6EC0048087A /* Debug */,
+				6FE248DD1F3AB6EC0048087A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE248DE1F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE248DF1F3AB6EC0048087A /* Debug */,
+				6FE248E01F3AB6EC0048087A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE248E11F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE248E21F3AB6EC0048087A /* Debug */,
+				6FE248E31F3AB6EC0048087A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FE248AB1F3AB6EC0048087A /* Project object */;
+}
