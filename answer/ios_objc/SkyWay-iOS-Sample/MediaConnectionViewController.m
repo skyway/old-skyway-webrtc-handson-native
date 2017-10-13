@@ -118,7 +118,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
 
     //ローカルビデオメディアをセット
     SKWVideo* localVideoView = [self.view viewWithTag:TAG_LOCAL_VIDEO];
-    [localVideoView addSrc:_msLocal track:0];
+    [_msLocal addVideoRenderer:localVideoView track:0];
 
     
     
@@ -151,7 +151,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
                         {
                             SKWVideo* remoteVideoView = (SKWVideo *)[self.view viewWithTag:TAG_REMOTE_VIDEO];
                             [remoteVideoView setHidden:NO];
-                            [remoteVideoView addSrc:_msRemote track:0];
+                            [_msRemote addVideoRenderer:remoteVideoView track:0];
                         });
      }];
     
@@ -161,7 +161,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
         
          dispatch_async(dispatch_get_main_queue(), ^{
              SKWVideo* remoteVideoView  = (SKWVideo *)[self.view viewWithTag:TAG_REMOTE_VIDEO];
-             [remoteVideoView  removeSrc:_msRemote track:0];
+             [_msRemote removeVideoRenderer:remoteVideoView track:0];
              _msRemote = nil;
              _mediaConnection = nil;
              _bEstablished = NO;
@@ -231,7 +231,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
             SKWVideo* video = (SKWVideo *)[self.view viewWithTag:TAG_REMOTE_VIDEO];
             if (nil != video)
             {
-                [video removeSrc:_msRemote track:0];
+                [_msRemote removeVideoRenderer:video track:0];
             }
             
             [_msRemote close];
@@ -520,7 +520,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
 	{
 		if (nil != vwRemote)
 		{
-			[vwRemote removeSrc:_msRemote track:0];
+            [_msRemote removeVideoRenderer:vwRemote track:0];
 		}
 		
 		[_msRemote close];

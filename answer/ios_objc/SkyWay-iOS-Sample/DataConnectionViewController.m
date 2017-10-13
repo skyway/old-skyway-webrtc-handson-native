@@ -202,7 +202,6 @@ typedef NS_ENUM(NSUInteger, DataType)
     option.label = @"chat";
     option.metadata = @"{'message': 'hi'}";
     option.serialization = SKW_SERIALIZATION_BINARY;
-    option.reliable = YES;
     
     // connect
     _data = [_peer connectWithId:strDestId options:option];
