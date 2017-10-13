@@ -1,7 +1,7 @@
 platform :ios,'9.0'
 
 def install_pods
-  pod 'SkyWay-iOS-SDK'
+  pod 'SkyWay'
 end
 
 target ‘SkyWay-Handson-iOS’ do

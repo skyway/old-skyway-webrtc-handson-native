@@ -194,12 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FE248DB1F3AB6EC0048087A /* Build configuration list for PBXNativeTarget "SkyWay-Handson-iOS" */;
 			buildPhases = (
-				F9D46ABFF8A40267DDFA3AE2 /* 📦 Check Pods Manifest.lock */,
+				F9D46ABFF8A40267DDFA3AE2 /* [CP] Check Pods Manifest.lock */,
 				6FE248AF1F3AB6EC0048087A /* Sources */,
 				6FE248B01F3AB6EC0048087A /* Frameworks */,
 				6FE248B11F3AB6EC0048087A /* Resources */,
-				254C840CEB13307859F95B22 /* 📦 Embed Pods Frameworks */,
-				97DBDC46B924CBB0B03AC580 /* 📦 Copy Pods Resources */,
+				254C840CEB13307859F95B22 /* [CP] Embed Pods Frameworks */,
+				97DBDC46B924CBB0B03AC580 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,7 +258,7 @@
 				TargetAttributes = {
 					6FE248B21F3AB6EC0048087A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 23WT7ZRGJZ;
+						DevelopmentTeam = YP76R8KFZE;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -322,29 +322,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		254C840CEB13307859F95B22 /* 📦 Embed Pods Frameworks */ = {
+		254C840CEB13307859F95B22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS-frameworks.sh",
+				"${PODS_ROOT}/SkyWay/SkyWay.framework",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97DBDC46B924CBB0B03AC580 /* 📦 Copy Pods Resources */ = {
+		97DBDC46B924CBB0B03AC580 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,19 +355,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyWay-Handson-iOS/Pods-SkyWay-Handson-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9D46ABFF8A40267DDFA3AE2 /* 📦 Check Pods Manifest.lock */ = {
+		F9D46ABFF8A40267DDFA3AE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyWay-Handson-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -537,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 23WT7ZRGJZ;
+				DEVELOPMENT_TEAM = YP76R8KFZE;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "SkyWay-Handson-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -556,7 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 23WT7ZRGJZ;
+				DEVELOPMENT_TEAM = YP76R8KFZE;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "SkyWay-Handson-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

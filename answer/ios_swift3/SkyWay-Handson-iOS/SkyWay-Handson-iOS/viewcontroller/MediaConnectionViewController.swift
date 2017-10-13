@@ -60,12 +60,15 @@ class MediaConnectionViewController: UIViewController {
         // MARK: 2.3．メディアの取得
         
         //メディアを取得
-        SKWNavigator.initialize(_peer);
+        SKWNavigator.initialize(_peer!);
         let constraints:SKWMediaConstraints = SKWMediaConstraints()
-        _msLocal = SKWNavigator.getUserMedia(constraints) as SKWMediaStream
+        _msLocal = SKWNavigator.getUserMedia(constraints) as SKWMediaStream?
         
         //ローカルビデオメディアをセット
-        localVideoView.addSrc(_msLocal, track: 0)
+        guard let _msLocal = _msLocal else{
+            return
+        }
+        _msLocal.addVideoRenderer(localVideoView, track: 0)
         
         
         // MARK: 2.4.相手から着信
@@ -96,9 +99,12 @@ extension MediaConnectionViewController{
         media.on(SKWMediaConnectionEventEnum.MEDIACONNECTION_EVENT_STREAM, callback: { (obj) -> Void in
             if let msStream = obj as? SKWMediaStream{
                 self._msRemote = msStream
+                if self._msRemote == nil{
+                        return
+                }
                 DispatchQueue.main.async {
                     self.remoteVideoView.isHidden = false
-                    self.remoteVideoView.addSrc(self._msRemote, track: 0)
+                    self._msRemote?.addVideoRenderer(self.remoteVideoView, track: 0)
                 }
             }
         })
@@ -109,7 +115,7 @@ extension MediaConnectionViewController{
             if let msStream = obj as? SKWMediaStream{
                 self._msRemote = msStream
                 DispatchQueue.main.async {
-                    self.remoteVideoView.removeSrc(msStream, track: 0)
+                    self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
                     self._msRemote = nil
                     self._mediaConnection = nil
                     self._bEstablished = false
@@ -158,9 +164,12 @@ extension MediaConnectionViewController{
     //ビデオ通話を終了する
     func closeChat(){
         if let _ = _mediaConnection, let _ = _msRemote{
-            remoteVideoView .removeSrc(_msRemote, track: 0)
-            _msRemote?.close()
-            _msRemote = nil
+            guard let _msRemote = self._msRemote else{
+                return
+            }
+            self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
+            _msRemote.close()
+            self._msRemote = nil
             _mediaConnection?.close()
         }
     }
