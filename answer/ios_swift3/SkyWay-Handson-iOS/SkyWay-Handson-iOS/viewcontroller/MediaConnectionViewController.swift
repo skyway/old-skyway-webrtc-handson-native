@@ -65,10 +65,10 @@ class MediaConnectionViewController: UIViewController {
         _msLocal = SKWNavigator.getUserMedia(constraints) as SKWMediaStream?
         
         //ローカルビデオメディアをセット
-        guard let _msLocal = _msLocal else{
+        guard let msLocal = _msLocal else{
             return
         }
-        _msLocal.addVideoRenderer(localVideoView, track: 0)
+        msLocal.addVideoRenderer(localVideoView, track: 0)
         
         
         // MARK: 2.4.相手から着信
@@ -164,11 +164,11 @@ extension MediaConnectionViewController{
     //ビデオ通話を終了する
     func closeChat(){
         if let _ = _mediaConnection, let _ = _msRemote{
-            guard let _msRemote = self._msRemote else{
+            guard let msRemote = self._msRemote else{
                 return
             }
             self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
-            _msRemote.close()
+            msRemote.close()
             self._msRemote = nil
             _mediaConnection?.close()
         }
