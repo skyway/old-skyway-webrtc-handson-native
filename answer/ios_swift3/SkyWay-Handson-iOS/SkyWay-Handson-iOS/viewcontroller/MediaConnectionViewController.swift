@@ -99,9 +99,6 @@ extension MediaConnectionViewController{
         media.on(SKWMediaConnectionEventEnum.MEDIACONNECTION_EVENT_STREAM, callback: { (obj) -> Void in
             if let msStream = obj as? SKWMediaStream{
                 self._msRemote = msStream
-                if self._msRemote == nil{
-                        return
-                }
                 DispatchQueue.main.async {
                     self.remoteVideoView.isHidden = false
                     self._msRemote?.addVideoRenderer(self.remoteVideoView, track: 0)
