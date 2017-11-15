@@ -82,7 +82,7 @@ extension DataConnectionViewController{
     
     func getPeerList(){
         
-        if let peer = self._peer, let myPeerId = self._id, myPeerId.characters.count != 0{
+        if let peer = self._peer, let myPeerId = self._id, myPeerId.count != 0{
             peer.listAllPeers({ (peers) -> Void in
                 if let connectedPeerIds = peers as? [String]{
                     self._listPeerIds = connectedPeerIds.filter({ (connectedPeerId) -> Bool in
@@ -107,7 +107,6 @@ extension DataConnectionViewController{
         options.label = "chat"
         options.metadata = "{'message': 'hi'}"
         options.serialization = SKWSerializationEnum.SERIALIZATION_BINARY
-        options.reliable = true
         
         //接続
         _data = _peer?.connect(withId: strDestId, options: options)
@@ -234,10 +233,10 @@ extension DataConnectionViewController{
 extension DataConnectionViewController{
     
     func appendLogWithMessage(strMessage:String){
-        var rng = NSMakeRange((logTextView.text?.characters.count)! + 1, 0)
+        var rng = NSMakeRange((logTextView.text?.count)! + 1, 0)
         logTextView.selectedRange = rng
         logTextView.replace(logTextView.selectedTextRange!, withText: strMessage)
-        rng = NSMakeRange(logTextView.text.characters.count + 1, 0)
+        rng = NSMakeRange(logTextView.text.count + 1, 0)
         logTextView.scrollRangeToVisible(rng)
         
     }
@@ -249,9 +248,9 @@ extension DataConnectionViewController{
         
         var res = "[\(header)]"
         
-        if 32000 < strValue.characters.count {
-            let top32Chars  = strValue.substring(to: strValue.index(strValue.startIndex, offsetBy: 32))
-            let last32Chars = strValue.substring(to: strValue.index(strValue.endIndex, offsetBy: -32))
+        if 32000 < strValue.count {
+            let top32Chars  = strValue[..<strValue.index(strValue.startIndex,offsetBy:32)]
+            let last32Chars = strValue[strValue.index(strValue.endIndex,offsetBy:-32)..<strValue.endIndex]
             res += "\(top32Chars)...\(last32Chars)"
         } else {
             res += strValue

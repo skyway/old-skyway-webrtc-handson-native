@@ -125,7 +125,7 @@ extension MediaConnectionViewController{
 extension MediaConnectionViewController{
     
     func getPeerList(){
-        if let peer = self._peer, let myPeerId = self._id, myPeerId.characters.count != 0{
+        if let peer = self._peer, let myPeerId = self._id, myPeerId.count != 0{
             peer.listAllPeers({ (peers) -> Void in
                 if let connectedPeerIds = peers as? [String]{
                     self._listPeerIds = connectedPeerIds.filter({ (connectedPeerId) -> Bool in
