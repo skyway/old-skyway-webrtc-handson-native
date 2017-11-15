@@ -109,17 +109,14 @@ extension MediaConnectionViewController{
         //コールバックを登録（Close）
         // MARK: MEDIACONNECTION_EVENT_CLOSE
         media.on(SKWMediaConnectionEventEnum.MEDIACONNECTION_EVENT_CLOSE, callback: { (obj) -> Void in
-            if let msStream = obj as? SKWMediaStream{
-                self._msRemote = msStream
-                DispatchQueue.main.async {
-                    self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
-                    self._msRemote = nil
-                    self._mediaConnection = nil
-                    self._bEstablished = false
-                    self.remoteVideoView.isHidden = true
-                }
-                self.updateUI()
+            DispatchQueue.main.async {
+                self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
+                self._msRemote = nil
+                self._mediaConnection = nil
+                self._bEstablished = false
+                self.remoteVideoView.isHidden = true
             }
+            self.updateUI()
         })
     }
 }
