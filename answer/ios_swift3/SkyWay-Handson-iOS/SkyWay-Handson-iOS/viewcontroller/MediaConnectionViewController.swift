@@ -157,14 +157,11 @@ extension MediaConnectionViewController{
     
     //ビデオ通話を終了する
     func closeChat(){
-        if let _ = _mediaConnection, let _ = _msRemote{
-            guard let msRemote = self._msRemote else{
-                return
-            }
-            self._msRemote?.removeVideoRenderer(self.remoteVideoView, track: 0)
+        if let mediaconnection = _mediaConnection, let msRemote = _msRemote{
+            msRemote.removeVideoRenderer(self.remoteVideoView, track: 0)
             msRemote.close()
-            self._msRemote = nil
-            _mediaConnection?.close()
+            _msRemote = nil
+            mediaconnection.close()
         }
     }
     
